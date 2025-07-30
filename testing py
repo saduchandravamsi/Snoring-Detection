@@ -1,0 +1,6 @@
+import tensorflow as tf
+import tensorflow_hub as hub
+
+# Correct way to load YAMNet as a Keras model
+yamnet_model = hub.KerasLayer("https://tfhub.dev/google/yamnet/1", trainable=False)
+print("✅ YAMNet model loaded!")
